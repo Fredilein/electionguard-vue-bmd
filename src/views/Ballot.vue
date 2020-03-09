@@ -18,7 +18,6 @@
     </div>
     <div v-else>
       <h1>Done!</h1>
-      <button class="btn btn-primary" v-on:click="encryptVote()">Confirm Vote</button>
       <div v-if="apires">
         <div class="container apires">
           <h4>Ballot ID</h4>
@@ -29,6 +28,9 @@
         <router-link to="/">
           <button class="btn btn-primary">Back to Home</button>
         </router-link>
+      </div>
+      <div v-else>
+        <button class="btn btn-success" v-on:click="encryptVote()">Confirm Vote</button>
       </div>
     </div>
   </div>
